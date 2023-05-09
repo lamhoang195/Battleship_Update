@@ -1,0 +1,129 @@
+# depslib dependency file v1.0
+1683640510 source:c:\sdl_game_ltnc\baseobject.cpp
+	"BaseObject.h"
+
+1683640525 c:\sdl_game_ltnc\baseobject.h
+	"CommonFunction.h"
+
+1683640533 c:\sdl_game_ltnc\commonfunction.h
+	<windows.h>
+	<string>
+	<SDL.h>
+	<SDL_image.h>
+	<SDL_video.h>
+	<SDL_mixer.h>
+	<SDL_ttf.h>
+
+1683640763 source:c:\sdl_game_ltnc\bossbullet.cpp
+	"BossBullet.h"
+
+1683640770 c:\sdl_game_ltnc\bossbullet.h
+	"BaseObject.h"
+	"CommonFunction.h"
+	<vector>
+	<bits/stdc++.h>
+
+1683640784 source:c:\sdl_game_ltnc\bossobject.cpp
+	"BossObject.h"
+
+1683640777 c:\sdl_game_ltnc\bossobject.h
+	"CommonFunction.h"
+	"BaseObject.h"
+	"TextObject.h"
+	"BossBullet.h"
+	"PlayerObject.h"
+	<vector>
+
+1683640934 c:\sdl_game_ltnc\textobject.h
+	"CommonFunction.h"
+	"BaseObject.h"
+
+1683640649 c:\sdl_game_ltnc\playerobject.h
+	"CommonFunction.h"
+	"BaseObject.h"
+	"LaserObject.h"
+	<vector>
+
+1683640631 c:\sdl_game_ltnc\laserobject.h
+	"BaseObject.h"
+	"CommonFunction.h"
+
+1683640539 source:c:\sdl_game_ltnc\commonfunction.cpp
+	"CommonFunction.h"
+
+1683640700 source:c:\sdl_game_ltnc\enemybullet.cpp
+	"EnemyBullet.h"
+
+1683640707 c:\sdl_game_ltnc\enemybullet.h
+	"BaseObject.h"
+
+1683640872 source:c:\sdl_game_ltnc\explosionobject.cpp
+	"ExplosionObject.h"
+	<bits/stdc++.h>
+
+1683640877 c:\sdl_game_ltnc\explosionobject.h
+	"BaseObject.h"
+	"CommonFunction.h"
+
+1683640611 source:c:\sdl_game_ltnc\imptimer.cpp
+	"ImpTimer.h"
+	"CommonFunction.h"
+
+1683640619 c:\sdl_game_ltnc\imptimer.h
+
+1683640636 source:c:\sdl_game_ltnc\laserobject.cpp
+	"LaserObject.h"
+
+1683640554 source:c:\sdl_game_ltnc\main.cpp
+	<bits/stdc++.h>
+	"CommonFunction.h"
+	"BaseObject.h"
+	"PlayerObject.h"
+	"ImpTimer.h"
+	"ThreatsObject.h"
+	"ExplosionObject.h"
+	"PowerObject.h"
+	"TextObject.h"
+	"BossObject.h"
+	"MenuObject.h"
+	<vector>
+	<ctime>
+
+1683640723 c:\sdl_game_ltnc\threatsobject.h
+	"CommonFunction.h"
+	"BaseObject.h"
+	"EnemyBullet.h"
+	"PlayerObject.h"
+	<vector>
+
+1683640863 c:\sdl_game_ltnc\powerobject.h
+	"BaseObject.h"
+	<vector>
+
+1683640925 c:\sdl_game_ltnc\menuobject.h
+	"BaseObject.h"
+	"CommonFunction.h"
+	"ThreatsObject.h"
+	"LaserObject.h"
+	"BossObject.h"
+	"PlayerObject.h"
+	"EnemyBullet.h"
+	"BossBullet.h"
+
+1683640919 source:c:\sdl_game_ltnc\menuobject.cpp
+	"MenuObject.h"
+
+1683640656 source:c:\sdl_game_ltnc\playerobject.cpp
+	"PlayerObject.h"
+	"ImpTimer.h"
+
+1683640857 source:c:\sdl_game_ltnc\powerobject.cpp
+	"PowerObject.h"
+
+1683640940 source:c:\sdl_game_ltnc\textobject.cpp
+	"TextObject.h"
+
+1683640715 source:c:\sdl_game_ltnc\threatsobject.cpp
+	"ThreatsObject.h"
+	<ctime>
+
