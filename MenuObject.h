@@ -3,12 +3,6 @@
 
 #include "BaseObject.h"
 #include "CommonFunction.h"
-#include "ThreatsObject.h"
-#include "LaserObject.h"
-#include "BossObject.h"
-#include "PlayerObject.h"
-#include "EnemyBullet.h"
-#include "BossBullet.h"
 
 class MenuObject: public BaseObject
 {

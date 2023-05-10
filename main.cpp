@@ -166,6 +166,8 @@ int main(int argc, char* argv[])
     g_threats_5.LoadImg("Image/Player/Enemies/enemyBlack4.png", g_screen);
     g_threats_6.LoadImg("Image/Player/Enemies/enemyBlack4.png", g_screen);
 
+    g_boss.LoadImg("Image/Player/boss.png", g_screen);
+
     //máu threat 2 và 3
     int threats_2_die = 1;
     int threats_3_die = 2;
@@ -220,6 +222,7 @@ int main(int argc, char* argv[])
     Mix_VolumeChunk(g_sound_menu, MIX_MAX_VOLUME/10);
     Mix_VolumeChunk(g_sound_gameover, MIX_MAX_VOLUME/10);
     Mix_VolumeChunk(g_sound_gamewin, MIX_MAX_VOLUME);
+    Mix_VolumeChunk(g_sound_laser_l, MIX_MAX_VOLUME/2);
 
     SDL_Event g_event;
     bool InMenu = false;
@@ -276,7 +279,7 @@ int main(int argc, char* argv[])
 
             SDL_RenderClear(g_screen);//xóa màn hình đi
 
-            SDL_ShowCursor(SDL_DISABLE);
+            SDL_ShowCursor(SDL_DISABLE);//ẩn chuột
 
             g_background.MoveBackGround(g_screen, NULL);
 
@@ -290,8 +293,8 @@ int main(int argc, char* argv[])
             g_threats_1.Render(g_screen, NULL);
             g_threats_1.MakeBullet(g_screen, SCREEN_WIDTH, SCREEN_HEIGHT/2);
 
+            //check flick
             CurrentTime = SDL_GetTicks();
-
             if (g_playerobject.get_flick() == true)
             {
                 if (CurrentTime >= LastTime + 3000)
@@ -309,6 +312,7 @@ int main(int argc, char* argv[])
             {
                 g_playerobject.setAlpha(255);
             }
+
 
             int frame_exp_width = exp_player.get_frame_width();
             int frame_exp_height = exp_player.get_frame_height();
@@ -828,6 +832,7 @@ int main(int argc, char* argv[])
                 Mix_PlayChannel(-1, g_sound_exp_player, 0);
                 g_playerobject.set_flick(true);
                 g_playerobject.got_hit();
+                g_boss.got_hit(10);
                 power_player.Decrease();
                 SDL_RenderPresent(g_screen);
                 if(g_playerobject.get_life() == 0)
@@ -930,7 +935,6 @@ int main(int argc, char* argv[])
 
             if(score_value >= 50)
             {
-                g_boss.LoadImg("Image/Player/boss.png", g_screen);
                 g_boss.MoveThreat();
                 g_boss.Show(g_screen, NULL);
                 if(g_boss.canspawnbullet() == true)

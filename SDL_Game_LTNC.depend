@@ -23,7 +23,7 @@
 	<vector>
 	<bits/stdc++.h>
 
-1683640784 source:c:\sdl_game_ltnc\bossobject.cpp
+1683694815 source:c:\sdl_game_ltnc\bossobject.cpp
 	"BossObject.h"
 
 1683640777 c:\sdl_game_ltnc\bossobject.h
@@ -74,7 +74,7 @@
 1683640636 source:c:\sdl_game_ltnc\laserobject.cpp
 	"LaserObject.h"
 
-1683640554 source:c:\sdl_game_ltnc\main.cpp
+1683694327 source:c:\sdl_game_ltnc\main.cpp
 	<bits/stdc++.h>
 	"CommonFunction.h"
 	"BaseObject.h"
@@ -100,15 +100,9 @@
 	"BaseObject.h"
 	<vector>
 
-1683640925 c:\sdl_game_ltnc\menuobject.h
+1683694327 c:\sdl_game_ltnc\menuobject.h
 	"BaseObject.h"
 	"CommonFunction.h"
-	"ThreatsObject.h"
-	"LaserObject.h"
-	"BossObject.h"
-	"PlayerObject.h"
-	"EnemyBullet.h"
-	"BossBullet.h"
 
 1683640919 source:c:\sdl_game_ltnc\menuobject.cpp
 	"MenuObject.h"
